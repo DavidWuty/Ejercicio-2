@@ -1,0 +1,20 @@
+<h1>Este es el home</h1>
+
+{% if user.is_authenticated %}
+<li>
+    <a href="/nueva/"> Registrar Mascota </a>
+</li>
+
+<li>
+    <a href="/cerrarsesion/"> Cerrar sesion </a>
+</li>
+
+{% else %}
+<li> 
+    <a href="/registro/"> Registrese </a>
+</li>
+
+<li> 
+    <a href="/login/"> Inicio sesion </a>
+</li>
+{% endif %}
